@@ -13,6 +13,20 @@
 - name: Users
   icon: "fa fa-users"
   active: false
+- name: Sub Menu 1
+  icon: "fa fa-sitemap"
+  active: false
+  submenu:
+    - name: Sub Menu 1.1
+    - name: Sub Menu 1.2
+    - name: Sub Menu 1.3
+- name: Sub Menu 2
+  icon: "fa fa-sitemap"
+  active: false
+  submenu:
+    - name: Sub Menu 2.1
+    - name: Sub Menu 2.2
+    - name: Sub Menu 2.3
 - name: Settings
   icon: "fa fa-cogs"
   active: false

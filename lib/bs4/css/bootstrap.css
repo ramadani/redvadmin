@@ -5106,16 +5106,16 @@ body {
 }
 
 #wrapper.toggled {
-  padding-left: 260px;
+  padding-left: 275px;
 }
 
 #sidebar-wrapper {
   z-index: 1000;
   position: fixed;
-  left: 260px;
+  left: 275px;
   width: 0;
   height: 100%;
-  margin-left: -260px;
+  margin-left: -275px;
   overflow-y: auto;
   background: #fff;
   -webkit-transition: all 0.4s ease;
@@ -5126,7 +5126,7 @@ body {
 }
 
 #wrapper.toggled #sidebar-wrapper {
-  width: 260px;
+  width: 275px;
 }
 
 #page-content-wrapper {
@@ -5136,7 +5136,7 @@ body {
 
 #wrapper.toggled #page-content-wrapper {
   position: absolute;
-  margin-right: -260px;
+  margin-right: -275px;
 }
 
 /* Sidebar Styles */
@@ -5185,8 +5185,8 @@ body {
   margin-bottom: 0 !important;
 }
 
-#sidebar-wrapper .nav {
-  width: 260px;
+#sidebar-wrapper .nav, #sidebar-wrapper .sub-menu {
+  width: 275px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -5194,6 +5194,20 @@ body {
 
 #sidebar-wrapper .nav li > a {
   padding: 12px 24px;
+}
+
+#sidebar-wrapper .sub-menu {
+  background-color: #f7f7f9;
+}
+
+#sidebar-wrapper .sub-menu li > a {
+  padding: 12px 24px 12px 53px;
+}
+
+#sidebar-wrapper li.panel-active > a, #sidebar-wrapper .sub-menu > li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-left: 4px solid #0275d8;
 }
 
 #sidebar-wrapper .nav li a {
@@ -5214,9 +5228,9 @@ body {
   color: #0275d8 !important;
 }
 
-#sidebar-wrapper .nav li a:hover, #sidebar-wrapper .nav li.active {
+#sidebar-wrapper .nav li a:hover, #sidebar-wrapper .nav li.active, #sidebar-wrapper .nav li.panel-active {
   text-decoration: none;
-  background: #eceeef;
+  background: #f7f7f9;
 }
 
 #sidebar-wrapper .nav li a:active,
@@ -5226,13 +5240,13 @@ body {
 
 @media (min-width: 768px) {
   #wrapper {
-    padding-left: 260px;
+    padding-left: 275px;
   }
   #wrapper.toggled {
     padding-left: 0;
   }
   #sidebar-wrapper {
-    width: 260px;
+    width: 275px;
   }
   #wrapper.toggled #sidebar-wrapper {
     width: 0;
@@ -5257,6 +5271,10 @@ body {
 
 .card.card-inverse .statistic .number {
   font-size: 2em;
+}
+
+.card.card-inverse .statistic .text {
+  line-height: .8;
 }
 
 .truncate {

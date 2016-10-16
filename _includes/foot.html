@@ -8,5 +8,10 @@
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
+
+    $('nav').on('click', 'li', function(){
+      $('nav li.panel').removeClass('panel-active');
+      $(this).addClass('panel-active');
+    });
   });
 </script>

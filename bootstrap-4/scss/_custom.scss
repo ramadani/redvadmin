@@ -12,7 +12,7 @@ $font-size-root:                    14px !default;
 $navbar-border-radius:              0 !default;
 $navbar-padding-y:                  ($spacer - .2) !default;
 
-// $gray-dark:                         #2b333a !default;
+$gray-darker:                         #2b333a !default;
 //
 // $brand-primary:                     #439FE0 !default;
 // $brand-success:                     #39b672 !default;
@@ -24,5 +24,5 @@ $navbar-padding-y:                  ($spacer - .2) !default;
 $btn-padding-x:                     1.2rem !default;
 $btn-padding-y:                     .6rem !default;
 
-$sidebar-width:                     260px;
+$sidebar-width:                     275px;
 $sidebar-trans-time:                0.4s;

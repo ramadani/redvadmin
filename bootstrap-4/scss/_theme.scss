@@ -89,7 +89,7 @@
     margin-bottom: 0 !important;
   }
 
-  .nav {
+  .nav, .sub-menu {
     width: $sidebar-width;
     margin: 0;
     padding: 0;
@@ -100,6 +100,19 @@
     > a {
       padding: 12px 24px;
     }
+  }
+
+  .sub-menu {
+    background-color: $gray-lightest;
+
+    li > a {
+      padding: 12px 24px 12px 53px;
+    }
+  }
+
+  li.panel-active > a, .sub-menu > li {
+    box-sizing: border-box;
+    border-left: 4px solid $brand-primary;
   }
 
   .nav li a {
@@ -121,9 +134,9 @@
       color: $brand-primary !important;
     }
 
-    a:hover, &.active {
+    a:hover, &.active, &.panel-active {
       text-decoration: none;
-      background: $gray-lighter;
+      background: $gray-lightest;
     }
   }
 
@@ -173,6 +186,10 @@
 
     .number {
       font-size: 2em;
+    }
+
+    .text {
+      line-height: .8;
     }
   }
 }
