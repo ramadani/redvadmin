@@ -1,0 +1,19 @@
+<div class="row p-t-1 p-l-1 p-r-1">
+  {% for statistic in site.data.statistics %}
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card card-inverse {{ statistic.card }}">
+      <div class="card-block">
+        <div class="row statistic">
+          <div class="col-sm-5 col-xs-4 text-xs-center">
+            <i class="{{ statistic.icon }} fa-5x"></i>
+          </div>
+          <div class="col-sm-7 col-xs-8 text-xs-left">
+            <div class="number">{{ statistic.number }}</div>
+            <div class="">{{ statistic.name }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

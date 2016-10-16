@@ -1,0 +1,18 @@
+- name: Dashboard
+  icon: "fa fa-dashboard"
+  active: true
+- name: Articles
+  icon: "fa fa-edit"
+  active: false
+- name: Messages
+  icon: "fa fa-envelope-o"
+  active: false
+- name: Landing Page
+  icon: "fa fa-desktop"
+  active: false
+- name: Users
+  icon: "fa fa-users"
+  active: false
+- name: Settings
+  icon: "fa fa-cogs"
+  active: false

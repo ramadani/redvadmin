@@ -1,0 +1,16 @@
+- name: Articles
+  number: 50
+  icon: fa fa-file-image-o
+  card: card-primary
+- name: Vistors This Month
+  number: 200
+  icon: fa fa-users
+  card: card-success
+- name: Comments
+  number: 500
+  icon: fa fa-comments-o
+  card: card-danger
+- name: Site Visitors
+  number: 5000
+  icon: fa fa-globe
+  card: card-info

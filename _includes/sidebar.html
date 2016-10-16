@@ -1,0 +1,38 @@
+<div id="sidebar-wrapper">
+    <div class="brand">
+      <a href="#" class="brand-logo">APP NAME</a>
+    </div>
+
+    <div class="nav-profile">
+      <div class="row">
+        <div class="col-xs-4">
+          <img src="img/user.jpg" class="img-fluid img-circle" alt="user" title="user">
+        </div>
+        <div class="col-xs-8 p-l-0">
+          <div class="truncate user-name">
+            Randa Wahyu Pradhana
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <p class="nav-title">NAVIGATION</p>
+      <ul class="nav">
+          {% for menu in site.data.menus %}
+          <li class="{% if menu.active  %} active {% endif %}">
+            <a href="#"><i class="{{ menu.icon }}"></i> {{ menu.name }}</a>
+          </li>
+          {% endfor %}
+      </ul>
+
+      <p class="nav-title m-t-1">OTHERS NAVIGATION</p>
+      <ul class="nav">
+          {% for menu in site.data.menus %}
+          <li>
+            <a href="#"><i class="{{ menu.icon }}"></i> {{ menu.name }}</a>
+          </li>
+          {% endfor %}
+      </ul>
+    </nav>
+</div>

@@ -1,0 +1,9 @@
+- title: Latest Articles
+  description: Daftar artikel terbaru yang dipublikasikan oleh penulis
+  outline: btn-outline-primary
+- title: Popular Articles
+  description: Daftar artikel yang sering diliat oleh pengunjung dalam sebulan terakhir
+  outline: btn-outline-success
+- title: Most Commented Articles
+  description: Daftar artikel yang paling dikomentari oleh pembaca dalam sebulan terakhir
+  outline: btn-outline-warning

@@ -1,0 +1,22 @@
+<div class="row p-a-1">
+  {% for article in site.data.article_cards %}
+  <div class="col-lg-4 col-md-6">
+    <div class="card p-a-1">
+      <div class="card-block">
+        <h4 class="card-title">{{ article.title }}</h4>
+        <p class="card-text">{{ article.description }}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+        <a href="#" class="list-group-item">Morbi leo risus</a>
+        <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+        <a href="#" class="list-group-item">Vestibulum at eros</a>
+        <a href="#" class="list-group-item">Vestibulum at eros</a>
+      </ul>
+      <div class="card-block">
+        <a href="#" class="btn {{ article.outline }} btn-block">See more</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
