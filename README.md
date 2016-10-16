@@ -3,7 +3,7 @@
 ![REDVADMIN][screenshot]
 
 ## Composition
-- Bootstrap 4
+- Bootstrap 4 Alpha
 - Fontawasome
 - jQuery
 - Chartjs

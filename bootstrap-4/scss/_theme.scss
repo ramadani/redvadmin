@@ -110,11 +110,6 @@
     }
   }
 
-  li.panel-active > a, .sub-menu > li {
-    box-sizing: border-box;
-    border-left: 4px solid $brand-primary;
-  }
-
   .nav li a {
     display: block;
     text-decoration: none;
@@ -126,6 +121,9 @@
   }
 
   .nav li {
+    position: relative;
+    display: block;
+    
     a:hover {
       color: $gray-dark;
     }
@@ -137,6 +135,19 @@
     a:hover, &.active, &.panel-active {
       text-decoration: none;
       background: $gray-lightest;
+    }
+
+    &.panel-active {
+      &:before {
+        position: absolute;
+        z-index: 99;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        content: '';
+        background: $brand-primary;
+        left: 0;
+      }
     }
   }
 

@@ -1,17 +1,4 @@
-<script src="{{ "/lib/jquery.min.js" | prepend: site.baseurl }}" charset="utf-8"></script>
-<script src="{{ "/lib/tether.min.js" | prepend: site.baseurl }}" charset="utf-8"></script>
-<script src="{{ "/lib/bs4/js/bootstrap.min.js" | prepend: site.baseurl }}" charset="utf-8"></script>
-
-<script type="text/javascript">
-  $(function(){
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-
-    $('nav').on('click', 'li', function(){
-      $('nav li.panel').removeClass('panel-active');
-      $(this).addClass('panel-active');
-    });
-  });
-</script>
+<script src="{{ "/lib/jquery.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/lib/tether.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/lib/bs4/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/app.js" | prepend: site.baseurl }}"></script>

@@ -5204,12 +5204,6 @@ body {
   padding: 12px 24px 12px 53px;
 }
 
-#sidebar-wrapper li.panel-active > a, #sidebar-wrapper .sub-menu > li {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-left: 4px solid #0275d8;
-}
-
 #sidebar-wrapper .nav li a {
   display: block;
   text-decoration: none;
@@ -5218,6 +5212,11 @@ body {
 
 #sidebar-wrapper .nav li a i {
   margin-right: 12px;
+}
+
+#sidebar-wrapper .nav li {
+  position: relative;
+  display: block;
 }
 
 #sidebar-wrapper .nav li a:hover {
@@ -5231,6 +5230,17 @@ body {
 #sidebar-wrapper .nav li a:hover, #sidebar-wrapper .nav li.active, #sidebar-wrapper .nav li.panel-active {
   text-decoration: none;
   background: #f7f7f9;
+}
+
+#sidebar-wrapper .nav li.panel-active:before {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  content: '';
+  background: #0275d8;
+  left: 0;
 }
 
 #sidebar-wrapper .nav li a:active,
