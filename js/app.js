@@ -3,7 +3,11 @@ $("#menu-toggle").click(function(e) {
     $("#wrapper").toggleClass("toggled");
 });
 
-$('nav').on('click', 'li.panel', function(){
+$('li.panel').children('.sub-menu').on('click', function(e){
+  e.stopPropagation();
+});
+
+$('li.panel').on('click', function(){
   if ($(this).hasClass('panel-active')) {
     $(this).removeClass('panel-active');
   } else {
