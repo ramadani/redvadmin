@@ -110,20 +110,40 @@
     }
   }
 
-  .nav li a {
-    display: block;
-    text-decoration: none;
-    color: $gray;
-
-    i {
-      margin-right: 12px;
-    }
-  }
-
   .nav li {
+    a {
+      display: block;
+      text-decoration: none;
+      color: $gray;
+      position: relative;
+
+      i {
+        margin-right: 12px;
+      }
+    }
+
+    &.panel {
+      > a {
+        padding-right: 36px;
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 0;
+          border-top: 5px solid $gray;
+          border-right: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-left: 5px solid transparent;
+          top: 45%;
+          right: 24px;
+        }
+      }
+    }
+
     position: relative;
     display: block;
-    
+
     a:hover {
       color: $gray-dark;
     }
@@ -147,6 +167,19 @@
         content: '';
         background: $brand-primary;
         left: 0;
+      }
+
+      > a::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid $gray;
+        border-left: 5px solid transparent;
+        top: 30%;
+        right: 24px;
       }
     }
   }

@@ -5204,19 +5204,37 @@ body {
   padding: 12px 24px 12px 53px;
 }
 
+#sidebar-wrapper .nav li {
+  position: relative;
+  display: block;
+}
+
 #sidebar-wrapper .nav li a {
   display: block;
   text-decoration: none;
   color: #55595c;
+  position: relative;
 }
 
 #sidebar-wrapper .nav li a i {
   margin-right: 12px;
 }
 
-#sidebar-wrapper .nav li {
-  position: relative;
-  display: block;
+#sidebar-wrapper .nav li.panel > a {
+  padding-right: 36px;
+}
+
+#sidebar-wrapper .nav li.panel > a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid #55595c;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  top: 45%;
+  right: 24px;
 }
 
 #sidebar-wrapper .nav li a:hover {
@@ -5241,6 +5259,19 @@ body {
   content: '';
   background: #0275d8;
   left: 0;
+}
+
+#sidebar-wrapper .nav li.panel-active > a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #55595c;
+  border-left: 5px solid transparent;
+  top: 30%;
+  right: 24px;
 }
 
 #sidebar-wrapper .nav li a:active,

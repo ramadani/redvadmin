@@ -22,7 +22,7 @@
         {% for menu in site.data.menus %}
         <li class="{% if menu.submenu %}panel{% endif %} {% if menu.active  %}active{% endif %}">
           {% if menu.submenu %}
-            <a data-toggle="collapse" data-parent="#navmenu" href="#menuCollapse{{ forloop.index }}" aria-expanded="false" aria-controls="menuCollapse{{ forloop.index }}">
+            <a data-toggle="collapse" class="truncate" data-parent="#navmenu" href="#menuCollapse{{ forloop.index }}" aria-expanded="false" aria-controls="menuCollapse{{ forloop.index }}">
               <i class="{{ menu.icon }}"></i> {{ menu.name }}
             </a>
 
@@ -35,7 +35,7 @@
             </ul>
 
           {% else %}
-            <a href="#"><i class="{{ menu.icon }}"></i> {{ menu.name }}</a>
+            <a href="#" class="truncate"><i class="{{ menu.icon }}"></i> {{ menu.name }}</a>
           {% endif %}
         </li>
         {% endfor %}
