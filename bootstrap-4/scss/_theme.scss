@@ -122,6 +122,13 @@
       }
     }
 
+    &.card {
+      margin-bottom: 0 !important;
+      background-color: inherit !important;
+      border-radius: 0 !important;
+      border: 0 !important;
+    }
+
     &.panel {
       > a {
         padding-right: 36px;

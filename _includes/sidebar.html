@@ -5,8 +5,8 @@
 
     <div class="nav-profile">
       <div class="row">
-        <div class="col-xs-3 p-r-0">
-          <img src="img/user.jpg" class="img-fluid img-circle" alt="user" title="user">
+        <div class="col-xs-3 pr-0">
+          <img src="img/user.jpg" class="img-fluid rounded-circle" alt="user" title="user">
         </div>
         <div class="col-xs-9">
           <div class="truncate user-name">
@@ -20,7 +20,7 @@
       <p class="nav-title">NAVIGATION</p>
       <ul class="nav" id="navmenu">
         {% for menu in site.data.menus %}
-        <li class="{% if menu.submenu %}panel{% endif %} {% if menu.active  %}active{% endif %}">
+        <li class="{% if menu.submenu %}card panel{% endif %} {% if menu.active  %}active{% endif %}">
           {% if menu.submenu %}
             <a data-toggle="collapse" class="truncate" data-parent="#navmenu" href="#menuCollapse{{ forloop.index }}" aria-expanded="false" aria-controls="menuCollapse{{ forloop.index }}">
               <i class="{{ menu.icon }}"></i> {{ menu.name }}

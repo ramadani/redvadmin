@@ -1,10 +1,8 @@
-<nav class="navbar navbar-dark bg-primary p-l-1 p-r-1">
+<nav class="navbar navbar-dark bg-primary px-1">
   <div class="container-fluid">
     <ul class="nav navbar-nav hidden-lg-up">
       <li class="nav-item">
-        <button class="navbar-toggler" id="menu-toggle" style="color: white;" type="button">
-          &#9776;
-        </button>
+        <button class="navbar-toggler" id="menu-toggle" type="button"></button>
       </li>
     </ul>
 
@@ -12,7 +10,7 @@
       {% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}
     </a>
 
-    <ul class="nav navbar-nav pull-xs-right">
+    <ul class="nav navbar-nav float-xs-right">
       <li class="nav-item dropdown">
         <a href="#" id="dLabel" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fa fa-envelope-o"></i>
