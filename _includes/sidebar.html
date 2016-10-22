@@ -3,20 +3,28 @@
       <a href="#" class="brand-logo">APP NAME</a>
     </div>
 
-    <div class="nav-profile">
-      <div class="row">
-        <div class="col-xs-3 pr-0">
-          <img src="img/user.jpg" class="img-fluid rounded-circle" alt="user" title="user">
-        </div>
-        <div class="col-xs-9">
-          <div class="truncate user-name">
-            Randa Wahyu Pradhana
-          </div>
-        </div>
-      </div>
-    </div>
-
     <nav>
+      <ul class="nav mb-1" id="navmenu">
+        <li class="profile card panel">
+          <a data-toggle="collapse" data-parent="#navmenu" class="truncate" href="#profileCollapse" aria-expanded="false" aria-controls="profileCollapse">
+            <img src="img/user.jpg" class="avatar img-fluid rounded-circle" alt="user" title="user">
+            <span>Randa Wahyu Pradhana</span>
+          </a>
+
+          <ul class="collapse sub-menu" id="profileCollapse">
+            <li>
+              <a href="#">Profile</a>
+            </li>
+            <li>
+              <a href="#">Update Password</a>
+            </li>
+            <li>
+              <a href="#" class="text-danger">Logout</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
       <p class="nav-title">NAVIGATION</p>
       <ul class="nav" id="navmenu">
         {% for menu in site.data.menus %}

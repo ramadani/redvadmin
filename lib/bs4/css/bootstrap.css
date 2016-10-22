@@ -5401,20 +5401,6 @@ body {
   text-decoration: none;
 }
 
-#sidebar-wrapper .nav-profile {
-  padding: 10px 24px 14px 24px;
-}
-
-#sidebar-wrapper .nav-profile .user-name {
-  padding: 15px 0;
-}
-
-#sidebar-wrapper .nav-profile .title {
-  font-size: 12px;
-  font-weight: 400;
-  color: #818a91 !important;
-}
-
 #sidebar-wrapper .nav-title {
   font-size: 11px !important;
   padding: 5px 24px;
@@ -5440,6 +5426,10 @@ body {
   padding: 12px 24px 12px 53px;
 }
 
+#sidebar-wrapper .sub-menu li > a:hover {
+  text-decoration: underline !important;
+}
+
 #sidebar-wrapper .nav li {
   position: relative;
   display: block;
@@ -5453,6 +5443,11 @@ body {
 }
 
 #sidebar-wrapper .nav li a i {
+  margin-right: 12px;
+}
+
+#sidebar-wrapper .nav li .avatar {
+  width: 3em;
   margin-right: 12px;
 }
 
@@ -5488,7 +5483,7 @@ body {
   color: #0275d8 !important;
 }
 
-#sidebar-wrapper .nav li a:hover, #sidebar-wrapper .nav li.active, #sidebar-wrapper .nav li.panel-active {
+#sidebar-wrapper .nav li a:hover, #sidebar-wrapper .nav li.active, #sidebar-wrapper .nav li.panel-active a {
   text-decoration: none;
   background: #f7f7f9;
 }
@@ -5515,6 +5510,10 @@ body {
   border-left: 5px solid transparent;
   top: 30%;
   right: 24px;
+}
+
+#sidebar-wrapper .nav li.panel-active.profile > a::after {
+  top: 39% !important;
 }
 
 #sidebar-wrapper .nav li a:active,

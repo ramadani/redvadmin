@@ -69,20 +69,6 @@
     }
   }
 
-  .nav-profile {
-    padding: 10px 24px 14px 24px;
-
-    .user-name {
-      padding: 15px 0;
-    }
-
-    .title {
-      font-size: ($font-size-root) - 2;
-      font-weight: 400;
-      color: $gray-light !important;
-    }
-  }
-
   .nav-title {
     font-size: 11px !important;
     padding: 5px 24px;
@@ -107,6 +93,10 @@
 
     li > a {
       padding: 12px 24px 12px 53px;
+
+      &:hover {
+        text-decoration: underline !important;
+      }
     }
   }
 
@@ -120,6 +110,11 @@
       i {
         margin-right: 12px;
       }
+    }
+
+    .avatar {
+      width: 3em;
+      margin-right: 12px;
     }
 
     &.card {
@@ -159,7 +154,7 @@
       color: $brand-primary !important;
     }
 
-    a:hover, &.active, &.panel-active {
+    a:hover, &.active, &.panel-active a {
       text-decoration: none;
       background: $gray-lightest;
     }
@@ -187,6 +182,10 @@
         border-left: 5px solid transparent;
         top: 30%;
         right: 24px;
+      }
+
+      &.profile > a::after {
+        top: 39% !important;
       }
     }
   }
