@@ -3,6 +3,8 @@ $("#menu-toggle").click(function(e) {
     $("#wrapper").toggleClass("toggled");
 });
 
+$('[data-toggle="tooltip"]').tooltip();
+
 $('li.panel').children('.sub-menu').on('click', function(e){
   e.stopPropagation();
 });

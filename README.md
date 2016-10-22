@@ -12,6 +12,6 @@
 - Install Ruby and Jekyll
 - Install Node, npm and grunt
 - Run `jekyll serve` to generate `_site` and preview it
-- Run `cd bootstrap-4` and `grunt watch` for theming
+- Run `cd bootstrap-4` and then `grunt watch` for theming
 
 [screenshot]: admin.png
