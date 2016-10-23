@@ -1,33 +1,31 @@
 - name: Dashboard
   icon: "fa fa-dashboard"
-  active: true
+  url: "/"
 - name: Articles
   icon: "fa fa-edit"
-  active: false
+  url: "/page/article.html"
 - name: Messages
   icon: "fa fa-envelope-o"
-  active: false
+  url: "/page/message.html"
 - name: Landing Page
   icon: "fa fa-desktop"
-  active: false
+  url: "/page/lander.html"
 - name: Users
   icon: "fa fa-users"
-  active: false
+  url: "/page/user.html"
 - name: Sub Menu 1
   icon: "fa fa-sitemap"
-  active: false
   submenu:
     - name: Sub Menu 1.1
     - name: Sub Menu 1.2
     - name: Sub Menu 1.3
 - name: Sample Pages
   icon: "fa fa-file-o"
-  active: false
   submenu:
     - name: Blank Page
-      url: "blank-page"
+      url: "/page/blank.html"
     - name: Login
-      url: "login"
+      url: "/page/login.html"
 - name: Settings
   icon: "fa fa-cogs"
-  active: false
+  url: "/page/settings.html"

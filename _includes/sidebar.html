@@ -7,7 +7,7 @@
       <ul class="nav mb-1" id="navmenu">
         <li class="profile card panel">
           <a data-toggle="collapse" data-parent="#navmenu" class="truncate" href="#profileCollapse" aria-expanded="false" aria-controls="profileCollapse">
-            <img src="img/user.jpg" class="avatar img-fluid rounded-circle" alt="user" title="user">
+            <img src="{{ "/img/user.jpg" | prepend: site.baseurl }}" class="avatar img-fluid rounded-circle" alt="user" title="user">
             <span>Randa Wahyu Pradhana</span>
           </a>
 
@@ -28,7 +28,7 @@
       <p class="nav-title">NAVIGATION</p>
       <ul class="nav" id="navmenu">
         {% for menu in site.data.menus %}
-        <li class="{% if menu.submenu %}card panel{% endif %} {% if menu.active  %}active{% endif %}">
+        <li class="{% if menu.submenu %}card panel{% endif %} {% if menu.url == page.url  %}active{% endif %}">
           {% if menu.submenu %}
             <a data-toggle="collapse" class="truncate" data-parent="#navmenu" href="#menuCollapse{{ forloop.index }}" aria-expanded="false" aria-controls="menuCollapse{{ forloop.index }}">
               <i class="{{ menu.icon }}"></i> {{ menu.name }}
@@ -37,13 +37,13 @@
             <ul class="collapse sub-menu" id="menuCollapse{{ forloop.index }}">
               {% for submenu in menu.submenu %}
               <li>
-                <a href="#">{{ submenu.name }}</a>
+                <a href="{{ submenu.url }}">{{ submenu.name }}</a>
               </li>
               {% endfor %}
             </ul>
 
           {% else %}
-            <a href="#" class="truncate"><i class="{{ menu.icon }}"></i> {{ menu.name }}</a>
+            <a href="{{ menu.url }}" class="truncate"><i class="{{ menu.icon }}"></i> {{ menu.name }}</a>
           {% endif %}
         </li>
         {% endfor %}
