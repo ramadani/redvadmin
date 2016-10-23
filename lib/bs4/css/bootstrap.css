@@ -5342,16 +5342,16 @@ body {
 }
 
 #wrapper.toggled {
-  padding-left: 275px;
+  padding-left: 255px;
 }
 
 #sidebar-wrapper {
   z-index: 1000;
   position: fixed;
-  left: 275px;
+  left: 255px;
   width: 0;
   height: 100%;
-  margin-left: -275px;
+  margin-left: -255px;
   overflow-y: auto;
   background: #fff;
   -webkit-transition: all 0.4s ease;
@@ -5362,7 +5362,7 @@ body {
 }
 
 #wrapper.toggled #sidebar-wrapper {
-  width: 275px;
+  width: 255px;
 }
 
 #page-content-wrapper {
@@ -5372,7 +5372,7 @@ body {
 
 #wrapper.toggled #page-content-wrapper {
   position: absolute;
-  margin-right: -275px;
+  margin-right: -255px;
 }
 
 /* Sidebar Styles */
@@ -5408,7 +5408,7 @@ body {
 }
 
 #sidebar-wrapper .nav, #sidebar-wrapper .sub-menu {
-  width: 275px;
+  width: 255px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -5523,13 +5523,13 @@ body {
 
 @media (min-width: 768px) {
   #wrapper {
-    padding-left: 275px;
+    padding-left: 255px;
   }
   #wrapper.toggled {
     padding-left: 0;
   }
   #sidebar-wrapper {
-    width: 275px;
+    width: 255px;
   }
   #wrapper.toggled #sidebar-wrapper {
     width: 0;
