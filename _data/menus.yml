@@ -7,9 +7,6 @@
 - name: Messages
   icon: "fa fa-envelope-o"
   url: "/page/message.html"
-- name: Landing Page
-  icon: "fa fa-desktop"
-  url: "/page/lander.html"
 - name: Users
   icon: "fa fa-users"
   url: "/page/user.html"

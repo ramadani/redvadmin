@@ -250,3 +250,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.p-4 {
+  padding: ($spacer-y * 4) ($spacer-x * 4) !important;
+}

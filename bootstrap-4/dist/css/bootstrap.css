@@ -5567,6 +5567,10 @@ body {
   text-overflow: ellipsis;
 }
 
+.p-4 {
+  padding: 4rem 4rem !important;
+}
+
 .modal-open {
   overflow: hidden;
 }
