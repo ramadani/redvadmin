@@ -5422,17 +5422,22 @@ body {
   background-color: #f7f7f9;
 }
 
-#sidebar-wrapper .sub-menu li > a {
+#sidebar-wrapper .sub-menu li a {
   padding: 12px 24px 12px 53px;
 }
 
-#sidebar-wrapper .sub-menu li > a:hover {
+#sidebar-wrapper .sub-menu li a:hover {
   text-decoration: underline !important;
 }
 
 #sidebar-wrapper .nav li {
   position: relative;
   display: block;
+}
+
+#sidebar-wrapper .nav li .avatar {
+  width: 3em;
+  margin-right: 12px;
 }
 
 #sidebar-wrapper .nav li a {
@@ -5446,9 +5451,17 @@ body {
   margin-right: 12px;
 }
 
-#sidebar-wrapper .nav li .avatar {
-  width: 3em;
-  margin-right: 12px;
+#sidebar-wrapper .nav li a:hover {
+  color: #373a3c;
+}
+
+#sidebar-wrapper .nav li.active:not(.card) > a {
+  color: #0275d8 !important;
+}
+
+#sidebar-wrapper .nav li a:hover, #sidebar-wrapper .nav li.active, #sidebar-wrapper .nav li.card.active a {
+  text-decoration: none;
+  background: #f7f7f9;
 }
 
 #sidebar-wrapper .nav li.card {
@@ -5458,11 +5471,11 @@ body {
   border: 0 !important;
 }
 
-#sidebar-wrapper .nav li.panel > a {
+#sidebar-wrapper .nav li.card > a {
   padding-right: 36px;
 }
 
-#sidebar-wrapper .nav li.panel > a::after {
+#sidebar-wrapper .nav li.card > a::after {
   position: absolute;
   content: "";
   width: 0;
@@ -5475,20 +5488,7 @@ body {
   right: 24px;
 }
 
-#sidebar-wrapper .nav li a:hover {
-  color: #373a3c;
-}
-
-#sidebar-wrapper .nav li.active a {
-  color: #0275d8 !important;
-}
-
-#sidebar-wrapper .nav li a:hover, #sidebar-wrapper .nav li.active, #sidebar-wrapper .nav li.panel-active a {
-  text-decoration: none;
-  background: #f7f7f9;
-}
-
-#sidebar-wrapper .nav li.panel-active:before {
+#sidebar-wrapper .nav li.card.active:before {
   position: absolute;
   z-index: 99;
   top: 0;
@@ -5499,7 +5499,7 @@ body {
   left: 0;
 }
 
-#sidebar-wrapper .nav li.panel-active > a::after {
+#sidebar-wrapper .nav li.card.active > a::after {
   position: absolute;
   content: "";
   width: 0;
@@ -5512,7 +5512,7 @@ body {
   right: 24px;
 }
 
-#sidebar-wrapper .nav li.panel-active.profile > a::after {
+#sidebar-wrapper .nav li.card.active.profile > a::after {
   top: 39% !important;
 }
 

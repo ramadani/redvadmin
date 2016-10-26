@@ -28,7 +28,7 @@
       <p class="nav-title">NAVIGATION</p>
       <ul class="nav" id="navmenu">
         {% for menu in site.data.menus %}
-        <li class="{% if menu.submenu %}card panel{% endif %} {% if menu.url == page.url  %}active{% endif %}">
+        <li class="{% if menu.submenu %}card{% endif %} {% if menu.url == page.url  %}active{% endif %}">
           {% if menu.submenu %}
             <a data-toggle="collapse" class="truncate" data-parent="#navmenu" href="#menuCollapse{{ forloop.index }}" aria-expanded="false" aria-controls="menuCollapse{{ forloop.index }}">
               <i class="{{ menu.icon }}"></i> {{ menu.name }}
